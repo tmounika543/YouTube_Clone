@@ -1,6 +1,4 @@
-import React from 'react';
 import { HiFire } from "react-icons/hi";
-import { emptyPageContainer, emptyIconStyle, emptyTextStyle } from './Styles/EmptyPageStyle';
 export default function Trending() {
     return (
         <div style={{ textAlign: 'center', margin: "200px 0px 200px 500px", fontSize: '24px', color: '#555' }}>

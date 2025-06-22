@@ -1,6 +1,6 @@
 // src/Components/Settings.jsx
 
-import React from 'react';
+// import React from 'react';
 import { IoSettings } from "react-icons/io5";
 
 export default function Settings() {

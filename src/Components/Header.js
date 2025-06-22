@@ -1,4 +1,4 @@
-import { FaSearch, FaMicrophone, FaRegUserCircle } from 'react-icons/fa';
+import { FaSearch,  FaRegUserCircle } from 'react-icons/fa';
 import { AiOutlineAudio } from 'react-icons/ai';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { LuMenu } from "react-icons/lu";

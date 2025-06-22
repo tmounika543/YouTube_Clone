@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { IoMusicalNotes } from "react-icons/io5";
-import { emptyPageContainer, emptyIconStyle, emptyTextStyle } from './Styles/EmptyPageStyle';
+// import { emptyPageContainer, emptyIconStyle, emptyTextStyle } from './Styles/EmptyPageStyle';
 export default function Music() {
     return (
         <div style={{ textAlign: 'center', margin: "200px 0px 200px 500px", fontSize: '24px', color: '#555' }}>

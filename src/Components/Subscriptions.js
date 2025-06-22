@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import VideoCard from './VideoCard';
+import { useState, useEffect } from 'react';
+// import VideoCard from './VideoCard';
 import { Bell, User } from 'lucide-react';
 import { useAuth } from '../Contexts/AuthContext';
 import { Link } from 'react-router-dom';
@@ -185,7 +185,8 @@ const Subscriptions = () => {
         {videos.length > 0 ? (
           <div className="grid">
             {videos.map((video) => (
-              <VideoCard key={video._id} video={video} />
+              <></>
+              // <VideoCard key={video._id} video={video} />
             ))}
           </div>
         ) : (

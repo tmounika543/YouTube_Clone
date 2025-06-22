@@ -1,5 +1,5 @@
-import React from 'react';
-import { emptyPageContainer, emptyIconStyle, emptyTextStyle } from './Styles/EmptyPageStyle';
+// import React from 'react';
+// import { emptyPageContainer, emptyIconStyle, emptyTextStyle } from './Styles/EmptyPageStyle';
 import { FaGraduationCap } from "react-icons/fa";
 
 export default function Courses() {

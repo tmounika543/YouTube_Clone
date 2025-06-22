@@ -1,6 +1,6 @@
 // src/Components/Feedback.jsx
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MdOutlineFeedback } from "react-icons/md";
 
 export default function Feedback() {
