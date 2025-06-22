@@ -6,7 +6,7 @@ export default function CategoryBasedData() {
     const categoryType = window.location.pathname.split('/')[2]
 
     useEffect(() => {
-        fetch(`http://91.108.104.49:443/api/videos/category/${categoryType}`, { method: "GET" })
+        fetch(`http://91.108.104.49:448/api/videos/category/${categoryType}`, { method: "GET" })
             .then((res) => {
                 return res.json()
             })
@@ -47,8 +47,8 @@ export default function CategoryBasedData() {
                             }}
                         >
                             <video
-                                src={`http://91.108.104.49:443/${video.url.replace('\\', '/')}`}
-                                // src="http://91.108.104.49:443/uploads/your-video-file.mp4" // ✅ replace with your actual video URL
+                                src={`http://91.108.104.49:448/${video.url.replace('\\', '/')}`}
+                                // src="http://91.108.104.49:448/uploads/your-video-file.mp4" // ✅ replace with your actual video URL
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 controls
                             />
