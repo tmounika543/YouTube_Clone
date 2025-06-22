@@ -12,7 +12,7 @@ const GoogleLoginButton = () => {
         const credentialResponse = jwtDecode(response.credential);
         console.log(credentialResponse, response.credential);
         // Send the credential to your backend for verification
-        fetch('http://localhost:3001/api/auth/google', {
+        fetch('http://91.108.104.49:3001/api/auth/google', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

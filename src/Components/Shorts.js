@@ -16,7 +16,7 @@ export default function Shorts() {
   const [comment, setComment] = useState('');
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/videos")
+    fetch("http://91.108.104.49:3001/api/videos")
       .then((res) => res.json())
       .then((data) => {
         const shortsData = data.filter((r) => r.videoType === "shorts");
@@ -33,7 +33,7 @@ export default function Shorts() {
     if (!isUserLoggedIn) {
       navigateToLogin();
     } else {
-      fetch(`http://localhost:3001/api/videos/${videoId}/${type}`, {
+      fetch(`http://91.108.104.49:3001/api/videos/${videoId}/${type}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -98,7 +98,7 @@ export default function Shorts() {
           }}
         >
           <video
-            src={`http://localhost:3001/${video.url.replace("\\", "/")}`}
+            src={`http://91.108.104.49:3001/${video.url.replace("\\", "/")}`}
             style={{
               width: "100%",
               height: "100%",

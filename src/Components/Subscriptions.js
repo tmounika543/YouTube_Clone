@@ -19,7 +19,7 @@ const Subscriptions = () => {
 
   const fetchSubscriptionVideos = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/videos');
+      const response = await fetch('http://91.108.104.49:3001/api/videos');
       const data = await response.json();
       const subscriptionVideos = data.slice(0, 10);
       setVideos(subscriptionVideos);
