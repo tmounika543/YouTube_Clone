@@ -35,7 +35,7 @@ export default function Login() {
 
     function signin() {
         if (data.email && data.password) {
-            fetch('http://91.108.104.49:3001/api/users/login', {
+            fetch('http://91.108.104.49:80/api/users/login', {
                 method: "POST",
                 headers: {
                     'Content-Type': "application/json"
@@ -89,7 +89,7 @@ export default function Login() {
             alert("confirm password should match with password")
         }
         else {
-            fetch('http://91.108.104.49:3001/api/users/signup', {
+            fetch('http://91.108.104.49:80/api/users/signup', {
                 method: "POST",
                 headers: {
                     'Content-Type': "application/json"

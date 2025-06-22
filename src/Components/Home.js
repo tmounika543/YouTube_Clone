@@ -7,7 +7,7 @@ export default function Home() {
   const [shorts, setShorts] = useState([]);
 
   useEffect(() => {
-    fetch('http://91.108.104.49:3001/api/videos')
+    fetch('http://91.108.104.49:80/api/videos')
       .then(res => res.json())
       .then(data => {
         const videosData = [];
@@ -21,7 +21,7 @@ export default function Home() {
       })
       .catch(err => console.error(err));
 
-    fetch('http://91.108.104.49:3001/api/categories')
+    fetch('http://91.108.104.49:80/api/categories')
       .then(res => res.json())
       .then(data => setCategories(data))
       .catch(err => console.error(err));
@@ -114,7 +114,7 @@ export default function Home() {
           <div key={index} style={videoCardStyle}>
             <div style={videoWrapperStyle}>
               <video
-                src={`http://91.108.104.49:3001/${video.url.replace('\\', '/')}`}
+                src={`http://91.108.104.49:80/${video.url.replace('\\', '/')}`}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 controls
               />
@@ -145,7 +145,7 @@ export default function Home() {
           <div key={index} style={videoCardStyle}>
             <div style={shortWrapperStyle}>
               <video
-                src={`http://91.108.104.49:3001/${short.url.replace('\\', '/')}`}
+                src={`http://91.108.104.49:80/${short.url.replace('\\', '/')}`}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 controls
               />
